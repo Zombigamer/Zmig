@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "TeleText";   /*Can be any text*/
+    src: local("teletext_regular"), url("../..//Fonts/teletext_regular.woff") format("woff");
+}
+
+.TitleContent {
+    background-color: #777671;
+    width: calc(100vw / 1.33);
+    border-radius: 30% 30% 0% 0% / 100% 100% 0% 0%;
+    height: 30vh;
+}
+
+.Name {
+    font-family: "TeleText";
+    font-size: 128px;
+    letter-spacing: 0.3vw;
+    margin: 0;
+    padding-top: 5vh;
+    width: calc(100vw / 1.33);
+    text-align: center;
+    color: #000000;
+    text-shadow: 6px 0 0 white, 0 6px 0 white, -6px 0 0 white, 0 -6px 0 white;
+}
+
+.Aka {
+    font-family: "TeleText";
+    font-size: 48px;
+    letter-spacing: 0.2vw;
+    margin: 0;
+    padding-top: 2vh;
+    width: calc(100vw / 1.33);
+    text-align: center;
+    color: #000000;
+}
