@@ -7,7 +7,11 @@ function App() {
   return (
     <div className='App'>
       <div className='FilterFrame'>
-        <div className='Runner'></div>
+        {/* <div className='Runner'></div>
+        <div className='Space'></div>
+        <div className='Runner'></div> */}
+        <div className='Runner1'></div>
+        
       </div>
       <div className='Animation'></div>
       <div className='ContentFrame'>

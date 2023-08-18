@@ -30,11 +30,11 @@ body {
     margin: 0;
     padding: 0;
     border-radius: 30%;
+    animation: normal onStartAnimation 2s;
 }
 
 .FilterFrame {
     position: absolute;
-    display: flex;
     z-index: 0;
     width: calc(100vw / 1.33);
     height: 96vh;
@@ -43,30 +43,191 @@ body {
     margin-left: calc((100vw - (100vw / 1.33)) / 2);
     padding: 0;
     border-radius: 30%;
-    opacity: 100%;
+    opacity: 25%;
+    animation: normal onStartAnimation 2s;
+    background-image: radial-gradient(white, black, grey);
+    background-color: white;
+    /* background-size: 6px 95px;
+    background-image: linear-gradient(
+        90deg,
+        hsl(0deg 0% 0%) 1%,
+        hsl(121deg 0% 12%) 43%,
+        hsl(132deg 0% 21%) 50%,
+        hsl(135deg 0% 31%) 51%,
+        hsl(136deg 0% 41%) 51%,
+        hsl(136deg 0% 52%) 49%,
+        hsl(137deg 0% 64%) 49%,
+        hsl(137deg 0% 75%) 50%,
+        hsl(137deg 0% 88%) 57%,
+        hsl(0deg 0% 100%) 99%
+    ); */
+}
+
+.Space {
+    padding-top: 50px;
 }
 
 .Runner {
     background-color: black;
-    height: 0.3vh;
-    animation: RunnerFrame 30s linear;
+    height: 1vh;
+    animation: RunnerFrame 5s linear infinite;
+    /* background-image: linear-gradient(
+        90deg,
+        hsl(0deg 0% 100%) 1%,
+        hsl(137deg 0% 88%) 43%,
+        hsl(137deg 0% 75%) 50%,
+        hsl(137deg 0% 64%) 51%,
+        hsl(136deg 0% 52%) 51%,
+        hsl(136deg 0% 41%) 49%,
+        hsl(135deg 0% 31%) 49%,
+        hsl(132deg 0% 21%) 50%,
+        hsl(121deg 0% 12%) 57%,
+        hsl(0deg 0% 0%) 99%
+    );
+    background-size: 10px 10px; */
 }
+
+.Runner1 {
+    background-color: black;
+    height: 0.3vh;
+    animation: RunnerFrame 60s linear infinite;
+    background-image: repeating-radial-gradient(black, grey, white);
+    background-size: 10px 100px;
+} 
+
+/* @keyframes RunnerTurn {
+    0%{
+        background-image: repeating-radial-gradient(black, grey, white);
+    }
+    100% {
+        background-image: repeating-radial-gradient(white, grey, black);
+    }
+} */
 
 @keyframes RunnerFrame {
     0% {
         transform: translateY(0vh);
         width: 40%;
         margin-left: 30%;
+        /* background-image: repeating-radial-gradient(black, grey, white); */
+    }
+    1% {
+        width: 40%;
+        margin-left: 22.7%;
+    }
+    2% {
+        width: 40%;
+        margin-left: 19.6%;
+    }
+    3% {
+        width: 40%;
+        margin-left: 17.4%;
+    }
+    4% {
+        width: 40%;
+        margin-left: 15.7%;
+    }
+    5% {
+        width: 40%;
+        margin-left: 14.1%;
+    }
+    6% {
+        width: 40%;
+        margin-left: 12.7%;
+    }
+    7% {
+        width: 40%;
+        margin-left: 11.5%;
+    }
+    8% {
+        width: 40%;
+        margin-left: 10.4%;
+    }
+    9% {
+        width: 40%;
+        margin-left: 9.4%;
+    }
+    10% {
+        width: 40%;
+        margin-left: 8.5%;
+    }
+    11% {
+        width: 4%;
+        margin-left: 7.4%;
+    }
+    12% {
+        width: 4%;
+        margin-left: 6.6%;
+    }
+    13% {
+        width: 4%;
+        margin-left: 5.9%;
+    }
+    14% {
+        width: 4%;
+        margin-left: 5.2%;
     }
     15% {
-        width: 100%;
-        margin-left: 4%;
+        width: 4%;
+        margin-left: 5%;
+    }
+    16% {
+        width: 40%;
+        margin-left: 4.1%;
+    }
+    17% {
+        width: 40%;
+        margin-left: 3.7%;
+    }
+    18% {
+        width: 40%;
+        margin-left: 3.1%;
+    }
+    19% {
+        width: 40%;
+        margin-left: 2.6%;
+    }
+    20% {
+        width: 4%;
+        margin-left: 2.1%;
+    }
+    21% {
+        width: 40%;
+        margin-left: 1.8%;
+    }
+    22% {
+        width: 40%;
+        margin-left: 1.5%;
+    }
+    23% {
+        width: 40%;
+        margin-left: 1.2%;
+    }
+    24% {
+        width: 40%;
+        margin-left: 1%;
+    }
+    25% {
+        width: 4%;
+        margin-left: 0.8%;
+    }
+    26% {
+        width: 40%;
+        margin-left: 0.5%;
+    }
+    27% {
+        width: 40%;
+        margin-left: 0.4%;
+    }
+    28% {
+        width: 40%;
+        margin-left: 0.3%;
+    }
+    29% {
+        width: 40%;
+        margin-left: 0.2%;
     }
     30% {
-        width: 100%;
-        margin-left: 0%;
-    }
-    50% {
         width: 100%;
         margin-left: 0%;
     }
@@ -75,8 +236,35 @@ body {
         margin-left: 0%;
     }
     100% {
-        transform: translateY(96vh);
+        transform: translateY(90vh);
         width: 40%;
         margin-left: 30%;
+        /* background-image: repeating-radial-gradient(white, grey, black); */
     }
 }
+
+/* @keyframes onStartAnimation {
+	0% {
+		transform: scaleY(0);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+} */
+
+/* .Runner {
+    background-color: black;
+    height: 0.3vh;
+    animation: RunnerFrame 1s linear infinite alternate;
+    background-image: repeating-radial-gradient(black, grey, white);
+    background-size: 10px 1px;
+}
+
+.Runner1 {
+    background-color: black;
+    height: 0.3vh;
+    animation: RunnerFrame 3s linear infinite;
+    background-image: repeating-radial-gradient(black, grey, white);
+    background-size: 10px 100px;
+} */
