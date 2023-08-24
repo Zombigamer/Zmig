@@ -91,7 +91,7 @@ body {
 .Runner1 {
     background-color: blue;
     height: 0.3vh;
-    animation: RunnerFrame 30s linear infinite;
+    animation: RunnerFrame 60s linear infinite;
     /* background-image: repeating-radial-gradient(black, grey, white);
     background-size: 10px 100px; */
 } 
@@ -113,69 +113,71 @@ body {
         /* background-image: repeating-radial-gradient(black, grey, white); */
     }
     1% {
-        width: 54.6%;
-        margin-left: 22.7%;
+        width: 55.4%;
+        margin-left: 22.3%;
     }
     2% {
-        width: 60.8%;
-        margin-left: 19.6%;
+        width: 62%;
+        margin-left: 19%;
     }
     3% {
-        width: 65.2%;
-        margin-left: 17.4%;
+        width: 66%;
+        margin-left: 17%;
     }
     4% {
-        width: 68.8%;
-        margin-left: 15.6%;
+        width: 70.4%;
+        margin-left: 14.8%;
     }
     5% {
-        width: 72.2%;
-        margin-left: 13.9%;
+        width: 73.2%;
+        margin-left: 13.4%;
     }
     6% {
-        width: 75%;
-        margin-left: 12.5%;
+        width: 76.6%;
+        margin-left: 11.7%;
     }
     7% {
-        width: 77.2%;
-        margin-left: 11.4%;
+        width: 78.6%;
+        margin-left: 10.7%;
     }
     8% {
-        width: 79.8%;
-        margin-left: 10.1%;
+        width: 81.2%;
+        margin-left: 9.4%;
     }
     9% {
-        width: 81.6%;
-        margin-left: 9.2%;
+        width: 83%;
+        margin-left: 8.5%;
     }
     10% {
-        width: 83.4%;
-        margin-left: 8.3%;
+        width: 85%;
+        margin-left: 7.5%;
     }
     11% {
-        width: 85.2%;
-        margin-left: 7.4%;
-    }
-    12% {
         width: 86.8%;
         margin-left: 6.6%;
     }
+    12% {
+        width: 88%;
+        margin-left: 6%;
+    }
+    /* ----------------------*/
     13% {
-        width: 88.2%;
+        width: 100%;
         margin-left: 5.9%;
     }
     14% {
-        width: 89.6%;
+        width: 100%;
         margin-left: 5.2%;
     }
     15% {
-        width: 90.8%;
+        width: 100%;
         margin-left: 4.6%;
     }
     16% {
-        width: 92%;
+        width: 100%;
         margin-left: 4%;
     }
+    /* ----------------------*/
     17% {
         width: 93%;
         margin-left: 3.5%;
